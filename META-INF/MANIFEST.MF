@@ -67,4 +67,5 @@ Bundle-ClassPath: .,
  lib/jfreechart-1.0.13-experimental.jar,
  lib/jfreechart-1.0.13-swt.jar,
  lib/jfreechart-1.0.13.jar,
- lib/junit.jar
+ lib/junit.jar,
+ lib/scada-oildata-1.0-SNAPSHOT.jar

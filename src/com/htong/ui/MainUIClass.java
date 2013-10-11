@@ -50,6 +50,8 @@ import com.htong.domain.CalcResult;
 import com.htong.domain.SQLWell;
 import com.htong.service.GTLYService;
 import org.eclipse.wb.swt.ResourceManager;
+import org.eclipse.swt.events.MouseAdapter;
+import org.eclipse.swt.events.MouseEvent;
 
 public class MainUIClass extends ApplicationWindow {
 	private class TableLabelProvider extends LabelProvider implements ITableLabelProvider {
@@ -335,6 +337,16 @@ public class MainUIClass extends ApplicationWindow {
 		});
 		button_2.setBounds(689, 17, 36, 27);
 		button_2.setText("辅助");
+		
+		Button button_3 = new Button(container, SWT.NONE);
+		button_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e) {
+				new GQSGTViewWindow().open();
+			}
+		});
+		button_3.setBounds(734, 17, 36, 27);
+		button_3.setText("高青");
 		
 		initControlsValue();
 
